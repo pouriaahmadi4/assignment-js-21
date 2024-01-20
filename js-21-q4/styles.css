@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+body {
+  background-color: #14141f;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 25vh;
+  flex-wrap: wrap;
+}
+.cards__card {
+  background-color: #343444;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards__card__img {
+  position: relative;
+}
+.cards__card__img__icon {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: #14141f;
+  color: #fff;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.cards__card__img img {
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+.cards__card__body__title {
+  margin: 1rem 0;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.cards__card__body__title span {
+  background-color: #5142fc;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem 1rem;
+  font-weight: 600;
+}
+.cards__card__footer,
+.cards__card__footer__account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+  transition: all 0.5ms;
+}
+.cards__card__footer {
+  width: 100%;
+}
+.cards__card__footer button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #5142fc;
+  background-color: transparent;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+.cards__card__footer button:hover {
+  background-color: #5142fc;
+}
+
+.cards__card__footer__account img {
+  border-radius: 1rem;
+}
+.cards__card__footer__account img:hover {
+  border-radius: 2rem;
+}
+.cards__card__footer__account {
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.cards__card__footer__account h4 {
+  font-weight: 500;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.cardSelected {
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+
